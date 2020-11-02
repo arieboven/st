@@ -9,6 +9,7 @@ static char *font = "Monospace:size=12:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
     "JoyPixels:pixelsize=10:antialias=true:autohint=true",
+    "Font Awesome 5 Free Solid:pixelsize=10",
 /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
 /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
 };
@@ -140,7 +141,7 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
+static unsigned int defaultcs = 258;
 static unsigned int defaultrcs = 257;
 unsigned int bg = 0, bgUnfocused = 0;
 
@@ -259,9 +260,9 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
-	{ CTRALT,               XK_C,           clipcopy,       {.i =  0} },
-	{ CTRALT,               XK_V,           clippaste,      {.i =  0} },
-	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+	{ CTRALT,               XK_c,           clipcopy,       {.i =  0} },
+	{ CTRALT,               XK_v,           clippaste,      {.i =  0} },
+	{ TERMMOD,              XK_y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
