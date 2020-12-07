@@ -22,7 +22,7 @@ In this build I have added some patches for more features, these patches can be 
 ## Requirements
 In order to build st you need the Xlib header files.  
 **!!! For colored text or emojis install [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/)**, if not st might crash when viewing emojis.  
-For `st-urlhandler` and `st-copyoutput` *dmenu* is required.
+For `st-urlhandler` and `st-copyoutput` [*dmenu*](https://tools.suckless.org/dmenu/) is required.
 
 ---
 ## Installation
