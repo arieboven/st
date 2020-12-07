@@ -4,6 +4,10 @@ st \- simple terminal
 .SH SYNOPSIS
 .B st
 .RB [ \-aiv ]
+.RB [ \-A
+.IR alpha ]
+.RB [ \-U
+.IR alpha ]
 .RB [ \-c
 .IR class ]
 .RB [ \-f
@@ -28,6 +32,10 @@ st \- simple terminal
 .PP
 .B st
 .RB [ \-aiv ]
+.RB [ \-A
+.IR alpha ]
+.RB [ \-U
+.IR alpha ]
 .RB [ \-c
 .IR class ]
 .RB [ \-f
@@ -54,6 +62,14 @@ is a simple terminal emulator.
 .TP
 .B \-a
 disable alternate screens in terminal
+.TP
+.TP
+.BI \-A " alpha"
+set alpha of terminal when focused (0-1).
+.TP
+.TP
+.BI \-U " alpha"
+set alpha of terminal when unfocused (0-1).
 .TP
 .BI \-c " class"
 defines the window class (default $TERM).
