@@ -1,4 +1,4 @@
-st.o
-x.o
+*.o
+*.orig
 st
 config.h
