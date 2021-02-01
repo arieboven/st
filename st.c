@@ -1805,6 +1805,8 @@ csihandle(void)
 		DEFAULT(csiescseq.arg[0], 1);
 		tscrolldown(term.top, csiescseq.arg[0], 0);
 		break;
+    case 't':
+        break;
 	case 'L': /* IL -- Insert <n> blank lines */
 		DEFAULT(csiescseq.arg[0], 1);
 		tinsertblankline(csiescseq.arg[0]);
@@ -1955,6 +1957,9 @@ strhandle(void)
 				redraw();
 			}
 			return;
+        case 8:
+        case 11:
+            return;
 		}
 		break;
 	case 'k': /* old title set compatibility */
