@@ -10,6 +10,8 @@ st \- simple terminal
 .IR alpha ]
 .RB [ \-c
 .IR class ]
+.RB [ \-d
+.IR path ]
 .RB [ \-f
 .IR font ]
 .RB [ \-g
@@ -38,6 +40,8 @@ st \- simple terminal
 .IR alpha ]
 .RB [ \-c
 .IR class ]
+.RB [ \-d
+.IR path ]
 .RB [ \-f
 .IR font ]
 .RB [ \-g
@@ -73,6 +77,10 @@ set alpha of terminal when unfocused (0-1).
 .TP
 .BI \-c " class"
 defines the window class (default $TERM).
+.TP
+.BI \-d " path"
+changes the working directory to
+.IR path .
 .TP
 .BI \-f " font"
 defines the
