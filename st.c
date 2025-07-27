@@ -1659,6 +1659,9 @@ tsetmode(int priv, int set, const int *args, int narg)
 				      and can be mistaken for other control
 				      codes. */
 				break;
+			case 2031: // Ignore
+			case 2048: // Ignore
+				break;
 			default:
 				fprintf(stderr,
 					"erresc: unknown private set/reset mode %d\n",
@@ -1700,8 +1703,9 @@ csihandle(void)
 	switch (csiescseq.mode[0]) {
 	default:
 	unknown:
-		fprintf(stderr, "erresc: unknown csi ");
-		csidump();
+		// Print error message by uncommenting next two lines
+		//fprintf(stderr, "erresc: unknown csi ");
+		//csidump();
 		/* die(""); */
 		break;
 	case '@': /* ICH -- Insert <n> blank char */
